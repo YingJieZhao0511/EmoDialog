@@ -117,4 +117,129 @@ GDED provides complementary information at different levels:
 This enables research on both global emotional reasoning and fine-grained emotion recognition.
 
 
+---
+
+# 🏗️ Annotation Pipeline
+
+GDED is constructed through a three-stage automated annotation framework.
+
+Raw Dialogue Speech
+|
+v
++-----------------------+
+| Speech Preprocessing |
+| VAD / Diarization / ASR|
++-----------------------+
+|
+v
++-----------------------------+
+| Multi-grained Feature |
+| Extraction |
+| |
+| - Emotional representations |
+| - Acoustic attributes |
+| - Speaker information |
+| - Semantic context |
++-----------------------------+
+|
+v
++-----------------------------+
+| Dynamic Emotion Modeling |
+| |
+| - Trend Prompt |
+| - Causal Prompt |
+| - Coarse-to-Fine Learning |
++-----------------------------+
+|
+v
++-----------------------------+
+| Human-guided Caption |
+| Generation |
++-----------------------------+
+|
+v
+GDED Dataset
+---
+
+# 🧠 Dynamic Emotion Modeling
+
+To capture emotional evolution in long conversations, GDED introduces an emotion-aware modeling framework.
+
+
+## Trend Prompt
+
+Captures dialogue-level emotional evolution by transforming acoustic emotional trajectories into high-level natural language descriptions.
+
+
+Example:
+
+> "The emotional intensity gradually increases, reaches a peak in the middle, and decreases afterward."
+
+
+---
+
+## Causal Prompt
+
+Captures potential emotional dependencies by identifying emotionally important historical contexts.
+
+It helps models understand:
+
+- where the emotion comes from;
+- which previous events influence the current emotional state.
+
+
+---
+
+## Coarse-to-Fine Training
+
+Following human emotional perception, the framework first learns:
+
+1. global emotional atmosphere changes;
+
+and then:
+
+2. utterance-level emotional states.
+
+
+This enables more reliable emotional reasoning in long multi-turn conversations.
+
+
+---
+
+# 📁 Dataset Format
+
+Each dialogue instance contains:
+{
+"dialogue_id": "...",
+"audio": [
+    "utt_001.wav",
+    "utt_002.wav",
+    ...
+],
+
+"transcript": [
+    "...",
+    "..."
+],
+
+"emotion_labels": [
+    "...",
+    "..."
+],
+
+"speaker_attributes": {
+    "gender": "...",
+    "age": "..."
+},
+
+"acoustic_attributes": {
+    "pitch": "...",
+    "energy": "...",
+    "speaking_rate": "..."
+},
+
+"emotion_description": "...",
+
+"dialogue_emotion_evolution": "..."
+}
 
