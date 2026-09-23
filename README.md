@@ -122,4 +122,5 @@ This enables research on both global emotional reasoning and fine-grained emotio
 # 🏗️ Annotation Pipeline
 
 GDED is constructed through a three-stage automated annotation framework.
+![Uploading 4228c548267ca16f81e068f76e5f9499.png…]()
 
