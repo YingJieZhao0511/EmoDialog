@@ -1,7 +1,7 @@
-# GDED: A Large-Scale Dialogue Speech Dataset for Granular Dynamic Emotion Description
+# EmoDialog: A Large-Scale Dataset for Dynamic Emotion Description in Dialogue Speech
 
 <p align="center">
-  <a href="https://gdeddynamicemotion.github.io/GDED/">
+  <a href="https://yingjiezhao0511.github.io/GDED/">
     <img src="https://img.shields.io/badge/🌐%20Demo-Online-blue" />
   </a>
   <img src="https://img.shields.io/badge/Language-English%20%7C%20Chinese-green" />
