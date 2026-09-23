@@ -24,12 +24,29 @@ Such supervision is insufficient for training Multimodal Large Language Models (
 
 To bridge this gap, we introduce:
 
-# **GDED (Granular Dynamic Emotion Description)**
+# **EmoDialog**
 
 a large-scale bilingual multi-turn dialogue speech dataset that provides **fine-grained natural language descriptions of dynamic emotional evolution and paralinguistic attributes**.
 
-GDED aims to enable a new generation of emotion-aware speech models that move beyond emotion classification toward **dynamic emotional understanding and reasoning**.
+EmoDialog aims to enable a new generation of emotion-aware speech models that move beyond emotion classification toward **dynamic emotional understanding and reasoning**.
 
+---
+
+# 🌐 Online Demo
+
+We provide an interactive demo showcasing examples from GDED:
+
+🔗 **Demo Website**
+
+https://yingjiezhao0511.github.io/GDED/
+
+
+The demo includes:
+
+- dialogue audio samples;
+- transcripts;
+- emotional evolution descriptions;
+- fine-grained speech attributes.
 
 ---
 
