@@ -123,24 +123,6 @@ This enables research on both global emotional reasoning and fine-grained emotio
 
 GDED is constructed through a three-stage automated annotation framework.
 
-```mermaid
-flowchart TD
-    A[Raw Dialogue Speech] --> B
-
-    B[Speech Preprocessing<br/>VAD / Speaker Diarization / ASR] --> C
-
-    C[Multi-grained Feature Extraction<br/><br/>
-    - Dynamic Emotional Representations<br/>
-    - Acoustic Attributes<br/>
-    - Speaker Information<br/>
-    - Semantic Context] --> D
-
-    D[Dynamic Emotion Modeling<br/><br/>
-    - Trend Prompt<br/>
-    - Causal Prompt<br/>
-    - Coarse-to-Fine Learning] --> E
-
-    E[Human-guided Caption Generation] --> F[GDED Dataset]
 ---
 
 # 🧠 Dynamic Emotion Modeling
